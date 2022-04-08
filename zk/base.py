@@ -1637,7 +1637,6 @@ class ZK(object):
 
                 attendance = Attendance(user_id, timestamp, status, punch, uid)
                 attendances.append(attendance)
-                print("\n\n\n\n\n\n\n" + record_size + "\n\n\n\n\n")
                 if record_size == 49:
                     attendance_data = attendance_data[49:]
                 else:
