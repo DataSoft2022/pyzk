@@ -1637,7 +1637,7 @@ class ZK(object):
 
                 attendance = Attendance(user_id, timestamp, status, punch, uid)
                 attendances.append(attendance)
-                attendance_data = attendance_data[40:]
+                attendance_data = attendance_data[record_size:]
         return attendances
 
     def clear_attendance(self):
